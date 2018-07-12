@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>Mini Project | Coursera</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		
+	</head>
+
+	<body>
+
+		<div class="container-fulid">
+			
+			<div class="container">
+				<h1 class="text-center">Varying Background Color of Images Using Javascript Library</h1>
+				
+				<div class="row">
+					
+					<div class="col-md-12">
+
+					</div>
+
+					<div class="col-md-6">
+						<canvas id="can1"></canvas>
+						<p> <span id="img-size"></span></p>
+						<p><input type="file" multiple="false" id="img" name="file" onchange="getImage()"></p>
+						<p id="img-size"></p>
+						<h4>Choose Filter: </h4>
+						<p><button id="grad" class="btn" onclick="doRainbow()">Rainbow</button>
+							<button class="btn btn-secondary" onclick="doGray()" >Grayscale</button>
+							<button onclick="doBlur()" class="btn btn-light">Blur</button>
+							<button class="btn btn-danger" onclick="doRed()">Red</button>
+							<button class="btn btn-primary" onclick="customFilter()">Custom Filter</button>
+						</p>
+						<p><button onclick="resettingImg()" class="btn btn-primary">Reset Change</button></p>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-6" style="display: block;"></div>
+					
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		
+	</body>
+</html>
